@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Kitty!!!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="game panel">
+            <div class="questions">
+                <button id="start">Start Game</button>
+                <div class="word-div"></div>
+                <div class="wrong-guesses"></div>
+            </div>
+            <div class="answers">
+                <input id="guess" type="text" placeholder="GUESS A LETTER">
+            </div>
+        </div>
+
+        <div class="view panel">
+            <div id="safety"></div>
+            <div id="kitty"></div>
+            <div id="fire"></div>
+            <div class="portal portal-top"></div>
+            <div class="portal portal-bottom"></div>
+            <div class="pipe"></div>
+        </div>
+    </div>
+    <script src="wordList.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

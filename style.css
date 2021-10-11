@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+.container {
+    display: flex;
+}
+
+.panel {
+    height: 100vh;
+    width: 50vw; 
+}
+
+/* game controls */
+.game {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 45%;
+    background-color: purple;
+}
+
+.answers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 45%;
+    background-color: rgb(2, 124, 49);
+}
+
+.word-div {
+    width: 80%;
+    height: 10%;
+    background-color: seashell;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 1.4rem;
+}
+
+.wrong-guesses {
+    width: 80%;
+    height: 10%;
+    background-color: rgb(141, 88, 51);
+}
+
+#guess {
+    width: 80%;
+    height: 12%;
+}
+
+/*  kitty styles */
+.view {
+    background-color: pink;
+    position: relative;
+    
+}
+
+#safety {  
+    position: absolute;
+    height: 5%;
+    width: 90%;
+    top: 2.5%;
+    left: 5%;
+    z-index: 123;
+    background-color: rgb(111, 165, 209);
+}
+
+#kitty {
+    position: absolute;
+    height: 3%;
+    width: 10%;
+    top: 48.5%;
+    left: 45%;
+    z-index: 123;
+    background-color: rgb(4, 0, 0);
+}
+
+#fire {
+    position: absolute;
+    height: 5%;
+    width: 90%;
+    bottom: 2.5%;
+    left: 5%;
+    z-index: 123;
+    background-color: red;
+}
+
+.portal {
+    position: absolute;
+    height: 6%;
+    width: 24%;
+    border-radius: 50%;
+    z-index: 123;
+    background-color: rgb(39, 147, 55);
+}
+
+.portal-top{
+    bottom: 75%;
+    left: 70%;
+}
+
+.portal-bottom {
+    bottom: 20%;
+    left: 70%;
+}
+
+.pipe {
+    position: absolute;
+    height: 49%;
+    width: 1px;
+    top: 25.5%;
+    left: 80%;
+    border: 1px dashed rgb(32, 30, 30);
+}
