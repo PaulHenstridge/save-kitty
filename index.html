@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save Kitty!!!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -18,17 +21,30 @@
                 <div class="wrong-guesses"></div>
             </div>
             <div class="answers">
-                <input id="guess" type="text" placeholder="GUESS A LETTER">
+                <h2>Guess a letter</h2>
+                <button class="portal-btn">Portal</button>
+                <input id="guess" type="text">
             </div>
         </div>
 
         <div class="view panel">
             <div id="safety"></div>
-            <div id="kitty"></div>
+            <div id="kitty">
+                <i class="fas fa-cat"></i>
+            </div>
             <div id="fire"></div>
             <div class="portal portal-top"></div>
-            <div class="portal portal-bottom"></div>
-            <div class="pipe"></div>
+            <div class="portal-zone"></div>
+
+
+            <div class="powerup-container">
+                <div class="powerup-bar">
+                    <div class="powerup-level"></div>
+                </div>
+            </div>
+        </div>
+        <div class="msg-border">
+            <div class="msg-window"></div>
         </div>
     </div>
     <script src="wordList.js"></script>
