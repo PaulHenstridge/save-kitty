@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     outline: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .container {
@@ -54,7 +55,7 @@
     border: 1px solid black;
 }
 
-/* game controls */
+/* left side */
 .game {
     background-color: rgb(30, 42, 92);
     display: flex;
@@ -112,7 +113,7 @@
     text-align: center;
     font-size: 3rem;
     box-shadow: -1px -1.5px 5px 1px rgb(32, 30, 70);
-    cursor: none;
+    cursor: pointer;
     
 }
 
@@ -127,6 +128,7 @@ guess:select {
     font-size: 1.7rem;
     background-color: rgb(59, 104, 8);
     box-shadow: -1px -1.5px 5px 1px rgb(32, 30, 70);
+    cursor: pointer;
 
 }
 
@@ -136,11 +138,12 @@ guess:select {
     font-size: 1.6rem;
     background-color: rgb(187, 47, 16);
     box-shadow: -1px -1.5px 5px 1px rgb(32, 30, 70);
+    cursor: pointer;
 
 
 }
 
-/*  kitty styles */
+/*  right side */
 .view {
     background: rgb(255,0,0);
     background: linear-gradient(0deg, rgba(255,0,0,1) 3%, rgba(253,150,49,1) 11%, rgba(252,215,69,1) 13%, rgba(114,159,196,1) 27%);
@@ -164,6 +167,23 @@ guess:select {
     transition: top 2s ease-out 0.1s;
 }
 
+.timer-window {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1%;
+    left: 1%;
+    width: 35%;
+    height: 10%;
+    border: 5px solid blue;
+    border-radius: 25%;
+    font-size: 2.2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: blue;
+}
+
 
 .portal-top {
     position: absolute;
@@ -177,9 +197,6 @@ guess:select {
     left: 22%;
 }
 
-.portal-top{
-  
-}
 
 .portal-zone {
     position: absolute;
@@ -190,15 +207,6 @@ guess:select {
     width: 100%;
     left: 0;
     
-}
-
-.pipe {
-    position: absolute;
-    height: 28%;
-    width: 1px;
-    bottom: 31%;
-    left: 50%;
-    border: 1px dashed rgb(32, 30, 30);
 }
 
 /* powerup bar  */
@@ -214,18 +222,44 @@ guess:select {
 
 .powerup-bar {
     position: relative;
-    margin: 5%;
     background-color: rgb(4, 8, 0);
     height: 100%;
     width: 90%;
 }
 
+.powerup-bar.active {
+    border: 2px solid goldenrod;
+}
+
 .powerup-level {
     position: absolute;
-    bottom: 0;
-    height: 10%;
-    width: 70%;
-    left: 15%;
+    bottom: 0.3%;
+    height: 5%;
+    width: 60%;
+    left: 20%;
     background-color: red;
+}
+
+
+.powerup-btn {
+    display: none;
+    position: absolute;
+    height: 6%;
+    top: -5%;
+    width: 220%;
+    left: -66%;
+    background-color: red;
+    border-radius: 15%;
+    text-align: center;
+    padding-top: 70%;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: 4px solid goldenrod;
+    
+}
+
+.powerup-btn.active {
+    display: flex;
 }
 
