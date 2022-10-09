@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save Kitty!!!</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flame.css">
+    <link rel="stylesheet" href="cloud.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,9 +18,21 @@
     <div class="container">
         <div class="game panel">
             <div class="questions">
+                <form class="levels">
+                    <input type="radio" name="level" id="easy" value="easy" checked>
+                    <label for="easy">Easy</label>
+                    <input type="radio" name="level" id="medium" value="medium">
+                    <label for="medium">Challenging</label>
+                    <input type="radio" name="level" id="hard" value="hard">
+                    <label for="hard">Tough</label>
+                </form>
+
                 <button id="start">Start Game</button>
+
                 <h2>Guess a letter</h2>
                 <input id="guess" type="text">
+
+                <h5> <span class="portal-count">0</span> portals remaining</h5>
                 <button class="portal-btn">Portal</button>
             </div>
             <div class="answers">
@@ -28,6 +42,9 @@
         </div>
 
         <div class="view panel">
+
+            <div class="heaven"></div>
+
             <div class="timer-window">0:00</div>
             <div id="kitty">
                 <i class="fas fa-cat"></i>
@@ -36,6 +53,11 @@
             <div class="portal portal-top"></div>
             <div class="portal-zone"></div>
 
+            <div class="hint">m</div>
+
+            <div class="powerup-info-box">
+                <h4 class="powerup-mssg">10 seconds added!</h4>
+            </div>
 
             <div class="powerup-container">
                 <div class="powerup-bar">
@@ -43,6 +65,9 @@
                 </div>
                 <div class="powerup-btn">Power Up!</div>
             </div>
+
+            <div class="hell"></div>
+
         </div>
         <div class="msg-border">
             <div class="msg-window"></div>
